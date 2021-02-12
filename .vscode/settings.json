@@ -6,6 +6,8 @@
         "xutility": "cpp",
         "tuple": "cpp",
         "xstring": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "unordered_map": "cpp",
+        "cassert": "cpp"
     }
 }
