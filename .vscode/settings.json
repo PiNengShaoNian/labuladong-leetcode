@@ -18,6 +18,7 @@
         "xhash": "cpp",
         "xlocnum": "cpp",
         "xmemory": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "cstddef": "cpp"
     }
 }
