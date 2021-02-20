@@ -19,6 +19,7 @@
         "xlocnum": "cpp",
         "xmemory": "cpp",
         "xtree": "cpp",
-        "cstddef": "cpp"
+        "cstddef": "cpp",
+        "xiosbase": "cpp"
     }
 }
