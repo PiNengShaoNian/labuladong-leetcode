@@ -35,15 +35,13 @@ unordered_set<string> generateParenthesis(int n) {
         result.insert("()" + str);
         result.insert("(" + str + ")");
         while (start < str.length() - 1) {
-            int end = getRightParenIndex(start, str);
+            if (str[start] == '(') {
+                string before(str.begin(), str.begin() + start + 1);
+                string after(str.begin() + start + 1, str.end());
 
-            if (end == -1) break;
-            string before(str.begin(), str.begin() + start);
-            string middle(str.begin() + start, str.begin() + end + 1);
-            string after(str.begin() + end + 1, str.end());
-
-            result.insert(before + "(" + middle + ")" + after);
-            start = end + 1;
+                result.insert(before + "(" + ")" + after);
+            }
+            ++start;
         }
     }
 
@@ -51,7 +49,7 @@ unordered_set<string> generateParenthesis(int n) {
 }
 
 int main() {
-    unordered_set<string> result = generateParenthesis(6);
+    unordered_set<string> result = generateParenthesis(3);
 
     cout << result.size() << endl;
     for (const string& str : result) {

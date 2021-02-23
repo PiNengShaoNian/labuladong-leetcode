@@ -20,6 +20,7 @@
         "xmemory": "cpp",
         "xtree": "cpp",
         "cstddef": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "cctype": "cpp"
     }
 }
